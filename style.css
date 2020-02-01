@@ -3,6 +3,11 @@
     src: url(fonts/FiraGO-Regular.woff);
   }
   
+  @font-face {
+    font-family: 'FiraGo Medium';
+    src: url(fonts/FiraGO-Medium.woff);
+  }
+  
 
 .menu-link {
 font-family:"FiraGo", arial, sans-serif;
