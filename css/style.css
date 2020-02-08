@@ -225,7 +225,7 @@ pre {
 .showcase-download {
     margin-left: 1rem;
     display: inline-block;
-    color: #49A15B;
+    color: rgb(59, 126, 72);
     background: white;
     border-radius: 99pc;
     padding: 12px 1rem;
@@ -285,7 +285,7 @@ pre {
 
 .download-button {
     background: white;
-    color: #5CC25D;
+    color: rgb(59, 126, 72);
     padding: 12px 1rem;
     border-radius: 99pc;
     margin: 1rem;
