@@ -186,7 +186,8 @@ pre {
 .showcase-image {
     display: inline-block;
     width: auto;
-    height: 100%;
+    height: 90%;
+    margin-top: 2%;
 }
 
 @media only screen and (max-width: 720px) {

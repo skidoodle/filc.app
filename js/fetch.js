@@ -30,7 +30,7 @@ function parseDate(datetime) {
     let date = new Date(datetime);
     var year = date.getFullYear().toString().padStart(2,"0");
     var month = (date.getMonth()+1).toString().padStart(2,"0");
-    var day = date.getDay().toString().padStart(2,"0");
+    var day = date.getDate().toString().padStart(2,"0");
     var hours = date.getHours().toString().padStart(2,"0");
     var minutes = date.getMinutes().toString().padStart(2,"0");
     var date_string = `${year}. ${month}. ${day}. ${hours}:${minutes}`;
@@ -56,7 +56,7 @@ $.get("//api.github.com/repos/filcnaplo/filcnaplo/releases", releases => {
         other = formatRelease(other_template, release);
         $(".other-versions").append(other);
 
-        $($(".other-versions")[$(".other-versions").length-1]).find(".other-info").click(() => {
+        $($(".other-row")[$(".other-row").length-1]).find(".other-info").click(() => {
             showInfo(release);
         });
     });
