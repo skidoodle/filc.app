@@ -1,8 +1,7 @@
 
 # [filcnaplo.github.io](http://filcnaplo.github.io)
 
-**FIGYELEM! Ez csak a backup oldal kódja, ez nem frissül autómatán.**
+**FIGYELEM! Ez az oldal csak tesztelés céljábó van fenttartva.**
 
-Az autómatán frissülő itt érhető el:
-<br>[https://www.filcnaplo.hu/school_list.json](https://www.filcnaplo.hu/school_list.json)
-<br>[https://www.filcnaplo.hu/settings.json](https://www.filcnaplo.hu/settings.json)
+Az hivatalos oldal itt érhető el:
+<br>https://www.filcnaplo.hu/
