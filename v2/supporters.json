@@ -1,5 +1,11 @@
 {
-  "top": [],
+  "top": [
+    {
+      "name": "Filc",
+      "amount": "3€",
+      "platform": "twitch"
+    }
+  ],
   "all": [
     {
       "name": "DarK",
