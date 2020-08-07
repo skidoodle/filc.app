@@ -11,6 +11,11 @@
       "name": "DarK",
       "amount": "1€",
       "platform": "patreon"
+    },
+    {
+      "name": "Giton",
+      "amount": "$1",
+      "platform": "donate"
     }
   ]
 }
