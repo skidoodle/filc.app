@@ -1,6 +1,10 @@
 {
   "top": [],
   "all": [
-    "DarK, 1€"
+    {
+      "name": "DarK",
+      "amount": "1€",
+      "platform": "patreon"
+    }
   ]
 }
