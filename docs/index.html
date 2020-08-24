@@ -18,16 +18,40 @@
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    a {
+      color: #2EBFA5;
+    }
+
+    a:hover {
+      color: #1e806e;
+    }
+
+    .footer>div {
+      margin: 0px 2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .footer>div {
+        margin: 0px 1em;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div style="display: flex; justify-content: center; height: 100%;">
+  <div style="display: flex; justify-content: center; height: 95%;">
     <div style="align-self: center; text-align: center;">
       <img src="logo.png" alt="Filc" style="width: 200px;">
       <h2>Az oldal jelenleg fejlesztés alatt van!</h2>
       <h3>Kérlek nézz vissza később!</h3>
     </div>
+  </div>
+  <div style="display: flex; justify-content: center;" class="footer">
+    <div><a href="https://github.com/filcnaplo">Github</a></div>
+    <div><a href="/privacy">Adatvédelem</a></div>
+    <div><a href="https://patreon.com/filcnaplo">Patreon</a></div>
+    <div><a href="/discord">Discord</a></div>
   </div>
 </body>
 
