@@ -1,5 +1,11 @@
 {
-  "top": [],
+  "top": [
+    {
+      "name": "kaletaa",
+      "amount": "€3",
+      "platform": "patreon"
+    }
+  ],
   "all": [
     {
       "name": "DarK",
