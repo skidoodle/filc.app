@@ -1,6 +1,7 @@
 html, body {
   background-color: #f6f6f6;
-  overflow-x: hidden
+  overflow-x: hidden;
+  scroll-behavior: smooth; 
 }
 
 a {
@@ -157,8 +158,8 @@ a:hover {
   font-size: 24pt;
 }
 
-button.btn {
-  font-size: 20pt;
+button.btn, a.btn {
+  font-size: 18pt;
 }
 
 .release .version {
