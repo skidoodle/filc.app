@@ -1,4 +1,8 @@
 {
+  "progress": {
+    "value": 2,
+    "max": 100
+  },
   "top": [
     {
       "name": "kaletaa",
