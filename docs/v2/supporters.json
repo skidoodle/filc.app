@@ -1,9 +1,14 @@
 {
   "progress": {
-    "value": 8,
+    "value": 100,
     "max": 100
   },
   "top": [
+    {
+      "name": "valQ",
+      "amount": "€100",
+      "platform": "patreon"
+    },
     {
       "name": "kaletaa",
       "amount": "€3",
