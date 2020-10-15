@@ -6,24 +6,29 @@
   "top": [
     {
       "name": "valQ",
-      "amount": "€100",
+      "amount": "$100",
       "platform": "donate"
     },
     {
+      "name": "Bumi",
+      "amount": "$5",
+      "platform": "donate"
+    }
+    {
       "name": "kaletaa",
-      "amount": "€3",
-      "platform": "patreon"
+      "amount": "$3",
+      "platform": "donate"
     }
   ],
   "all": [
     {
       "name": "mima47",
-      "amount": "€1",
+      "amount": "$1",
       "platform": "patreon"
     },
     {
       "name": "DarK",
-      "amount": "€1",
+      "amount": "$1",
       "platform": "patreon"
     },
     {
