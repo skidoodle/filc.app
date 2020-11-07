@@ -12,7 +12,12 @@
     {
       "name": "Bumi",
       "amount": "$5",
-      "platform": "donate"
+      "platform": "patreon"
+    },
+    {
+      "name": "Neko Astolfo",
+      "amount": "$3",
+      "platform": "patreon",
     },
     {
       "name": "kaletaa",
@@ -22,14 +27,14 @@
   ],
   "all": [
     {
-      "name": "mima47",
+      "name": "DarK",
       "amount": "$1",
       "platform": "patreon"
     },
     {
-      "name": "DarK",
+      "name": "mima47",
       "amount": "$1",
-      "platform": "patreon"
+      "platform": "donate"
     },
     {
       "name": "Giton",
