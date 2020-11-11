@@ -13,19 +13,24 @@
       "name": "Bumi",
       "amount": "$5",
       "platform": "patreon"
-    },
+    }
+  ],
+  "all": [
     {
       "name": "Neko Astolfo",
       "amount": "$3",
       "platform": "patreon"
     },
     {
+      "name": "StokiBoti",
+      "amount": "$3.6",
+      "platform": "donate"
+    },
+    {
       "name": "kaletaa",
       "amount": "$3",
       "platform": "donate"
-    }
-  ],
-  "all": [
+    },
     {
       "name": "DarK",
       "amount": "$1",
