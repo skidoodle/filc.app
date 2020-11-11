@@ -12,7 +12,7 @@
     {
       "name": "Bumi",
       "amount": "$5",
-      "platform": "patreon"
+      "platform": "donate"
     }
   ],
   "all": [
@@ -39,7 +39,7 @@
     {
       "name": "mima47",
       "amount": "$1",
-      "platform": "donate"
+      "platform": "patreon"
     },
     {
       "name": "Giton",
