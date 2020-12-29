@@ -23,12 +23,17 @@
     },
     {
       "name": "StokiBoti",
-      "amount": "$3.6",
+      "amount": "$4",
       "platform": "donate"
     },
     {
       "name": "kaletaa",
       "amount": "$3",
+      "platform": "donate"
+    },
+    {
+      "name": "chromium",
+      "amount": "$1",
       "platform": "donate"
     },
     {
