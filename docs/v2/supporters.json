@@ -1,6 +1,6 @@
 {
   "progress": {
-    "value": 43,
+    "value": 48,
     "max": 100
   },
   "top": [
@@ -11,6 +11,11 @@
     },
     {
       "name": "Bumi",
+      "amount": "$5",
+      "platform": "donate"
+    },
+    {
+      "name": "manen",
       "amount": "$5",
       "platform": "donate"
     }
