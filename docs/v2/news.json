@@ -1,5 +1,10 @@
 [
   {
+    "title": "Új verzió: 2.1.2",
+    "content": "A 2.1.2 verzió újdonsága:\nJegyek rendezése lekérés után (éves átlag grafikon javítása) by @DarK\n\nLetölteni a 'MEGNYITÁS' gombra kattintva tudod.\nHa alkalmazásboltból töltötted le az appot, nem kell kézzel frissítened.\n\nMinden korábbi hírlevelet megtalálsz a Fiók > Beállítások > Névjegy > Hírek oldalon, ha most nem lenne érkezésed frissíteni.\n\n---\n\nEgyéb híreinkben: Az AppStore jelenlétünkben a hétvégén (2021. 03. 6-7.) jelentős változás várható. További infó később.",
+    "link": "https://github.com/filc/naplo/releases/download/2.1.2/hu.filcnaplo.ellenorzo_2.1.2.apk"
+  },
+  {
     "title": "Új verzió: 2.1.1",
     "content": "Mikrofonpróba...\nHa megkaptad ezt, a hírlevél funkció első éles tesztjét, jelezd a Discord szerverünk 📰-hírek szobájában reakcióval!\n(Ha nem vagy tagja, csatlakozz a filcnaplo.hu/discord oldalon.)\n\nA 2.1.1 verzió újdonságai:\n- Jelentős teljesítményoptimalizálás\n- Teljes záró kártya kattintható\n- Záró átlag hibajavítása\n- Fordítás javítások\n- Debug fiók javítások\n- Egyéb hibajavítások\n\nLetölteni a 'MEGNYITÁS' gombra kattintva tudod.\n\nMinden korábbi hírlevelet megtalálsz a Fiók > Beállítások > Névjegy > Hírek oldalon, ha most nem lenne érkezésed frissíteni.",
     "link": "https://github.com/filc/naplo/releases/download/2.1.1/hu.filcnaplo.ellenorzo_2.1.1.apk"
