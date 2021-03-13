@@ -1,5 +1,10 @@
 [
   {
+    "title": "Ideiglenes átállás AppStoreban Test Flightra",
+    "content": "Ha Apple készüléken vagy, a MEGNYITÁS gombbal tudsz csatlakozni a \"tesztprogramhoz\", a megnyíló oldal végigvezet a letöltés lépésein.\n\nAndroidon is ajánljuk, hogy F-Droidból töltsétek le az appot. Ehhez videó tutorialt a filcnaplo.hu/dmca oldalon találtok.",
+    "link": "https://testflight.apple.com/join/Ak6I1C4C"
+  },
+  {
     "title": "Új verzió: 2.1.2",
     "content": "A 2.1.2 verzió újdonsága:\nJegyek rendezése lekérés után (éves átlag grafikon javítása) by @DarK\n\nLetölteni a 'MEGNYITÁS' gombra kattintva tudod.\nHa alkalmazásboltból töltötted le az appot, nem kell kézzel frissítened.\n\nMinden korábbi hírlevelet megtalálsz a Fiók > Beállítások > Névjegy > Hírek oldalon, ha most nem lenne érkezésed frissíteni.\n\n---\n\nEgyéb híreinkben: Az AppStore jelenlétünkben a hétvégén (2021. 03. 6-7.) jelentős változás várható. További infó később.",
     "link": "https://github.com/filc/naplo/releases/download/2.1.2/hu.filcnaplo.ellenorzo_2.1.2.apk"
