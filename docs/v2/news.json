@@ -1,5 +1,10 @@
 [
   {
+    "title": "Nem megjelenő szövegek, házi csatolmányok",
+    "content": "Többen is jeleztétek, hogy nem jelennek meg a házik, üzenetek, stb. szöveges tartalmai.\nA hiba csak bizonyos eszközöket érint, ha te is köztük vagy, így tudod tünetileg kezelni a problémát:\n\nA beállításokban kapcsold be a fejlesztői lehetőségeket, majd kapcsold be a HTML-renderelés opciót.\nHa már korábban bekapcsoltad és nem látod a szövegeket, kapcsold ki.\n\nA Kréta házik a DKT rendszerrel való szorosabb összefűzése miatt változott a csatolmányok rendszere is, ezért jelenleg ezek legtöbbször nem működnek a Filcben.\nMindkét hibát amint tudjuk, javítjuk, türelmeteket kérjük.\n\nHa elsők között szeretnél értesülni a frissítésekről, akár részt vennél a tesztelésben, csatlakozz Discord szerverünkhöz a MEGNYITÁS gombbal!\nNe felejtsd el ajánlani a Filcet osztálytársaidnak ;)",
+    "link": "https://discord.com/invite/GqzTJj5"
+  },
+  {
     "title": "Ideiglenes átállás AppStoreban Test Flightra",
     "content": "Ha Apple készüléken vagy, a MEGNYITÁS gombbal tudsz csatlakozni a \"tesztprogramhoz\", a megnyíló oldal végigvezet a letöltés lépésein.\n\nAndroidon is ajánljuk, hogy F-Droidból töltsétek le az appot. Ehhez videó tutorialt a filcnaplo.hu/dmca oldalon találtok.",
     "link": "https://testflight.apple.com/join/Ak6I1C4C"
