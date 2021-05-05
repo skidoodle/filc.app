@@ -32,7 +32,7 @@ function getReleases() {
           <h3 class="redhat mb-5" style = "font-weight: 500;" >Régebbi verziók</h3>`;
         latestReleaseContainer.innerHTML = `
     <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb verzió</h3>`;
-    latestPrereleaseContainer.innerHTML = `
+        latestPrereleaseContainer.innerHTML = `
     <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb béta</h3>`;
         resolve(res_json);
       });
@@ -47,15 +47,17 @@ getReleases().then((releases) => {
   let addedBeta = false;
   let addedFirst = false;
   let latestPrereleaseContainer = document.querySelector("#latestBetaContainer");
-  
+
   function addFirstRelease(release) {
     let release_date = new Date(release.published_at);
     let compose = `
                     <div class="release row redhat align-items-center mt-5 mb-5">
                     <div class="col" style="white-space: nowrap;">
-                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">${
-      release.name
-      }</a></div>
+
+                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">
+                      ${release.name}
+                    </a></div>
+
                     <div class="col">
                     <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
   
@@ -73,13 +75,9 @@ getReleases().then((releases) => {
                     </div>
 
                     <div class="col" >
-                    <a href="${
-      release.assets[0]
-        ? release.assets[0].browser_download_url
-        : "#"
-      }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
-      release.assets[0] ? "" : "display: none !important"
-      }">
+                    <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
+                        class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" 
+                        style="white-space: nowrap; ${release.assets[0] ? "" : "display: none !important"}">
                     <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
@@ -90,8 +88,7 @@ getReleases().then((releases) => {
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -100,8 +97,7 @@ getReleases().then((releases) => {
               type="button"
               class="close"
               data-dismiss="modal"
-              aria-label="Close"
-            >
+              aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -123,9 +119,9 @@ getReleases().then((releases) => {
     let compose = `
                     <div class="release row redhat align-items-center mt-5 mb-5">
                     <div class="col" style="white-space: nowrap;">
-                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">${
-      release.name
-      }</a></div>
+                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">
+                      ${release.name}
+                    </a></div>
                     <div class="col">
                     <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
   
@@ -143,13 +139,9 @@ getReleases().then((releases) => {
                     </div>
 
                     <div class="col" >
-                    <a href="${
-      release.assets[0]
-        ? release.assets[0].browser_download_url
-        : "#"
-      }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
-      release.assets[0] ? "" : "display: none !important"
-      }">
+                    <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
+                       class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" 
+                       style="white-space: nowrap; ${release.assets[0] ? "" : "display: none !important"}">
                     <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
@@ -160,8 +152,7 @@ getReleases().then((releases) => {
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -170,8 +161,7 @@ getReleases().then((releases) => {
               type="button"
               class="close"
               data-dismiss="modal"
-              aria-label="Close"
-            >
+              aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -192,9 +182,11 @@ getReleases().then((releases) => {
     let compose = `
                     <div class="release row redhat align-items-center mt-5 mb-5">
                     <div class="col" style="white-space: nowrap;">
-                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">${
-      release.name
-      }</a></div>
+                    
+                    <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">
+                      ${release.name}
+                    </a></div>
+
                     <div class="col">
                     <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
   
@@ -212,13 +204,9 @@ getReleases().then((releases) => {
                     </div>
 
                     <div class="col" >
-                    <a href="${
-      release.assets[0]
-        ? release.assets[0].browser_download_url
-        : "#"
-      }" class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" style="white-space: nowrap; ${
-      release.assets[0] ? "" : "display: none !important"
-      }">
+                    <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
+                       class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft" 
+                       style="white-space: nowrap; ${release.assets[0] ? "" : "display: none !important"}">
                     <img src="../assets/img/icons/download.svg" alt="Download" class="mr-1">
                     <span>Letöltés</span></a>
                     </div>
@@ -229,8 +217,7 @@ getReleases().then((releases) => {
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -239,8 +226,7 @@ getReleases().then((releases) => {
               type="button"
               class="close"
               data-dismiss="modal"
-              aria-label="Close"
-            >
+              aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
