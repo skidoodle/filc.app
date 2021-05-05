@@ -32,8 +32,7 @@ function getReleases() {
           <h3 class="redhat mb-5" style = "font-weight: 500;" >Régebbi verziók</h3>`;
         latestReleaseContainer.innerHTML = `
           <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb verzió</h3>`;
-        latestPrereleaseContainer.innerHTML = `
-          <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb béta</h3>`;
+        latestPrereleaseContainer.innerHTML = ` `;
         resolve(res_json);
       });
   });
@@ -196,6 +195,7 @@ getReleases().then((releases) => {
   function addPrerelease(release) {
     let release_date = new Date(release.published_at);
     let compose = `
+      <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb kísérleti verzió</h3>
       <div class="release row redhat align-items-center mt-5 mb-5">
       <div class="col" style="white-space: nowrap;">
       
@@ -260,12 +260,15 @@ getReleases().then((releases) => {
   }
 
   // meh code
+
+  let stableDate = releases.find((r) => !r.prerelease).release_date;
+
   for (let release of releases) {
     if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
-      if (release.prerelease && !addedBeta) {
+      if (release.prerelease && !addedBeta && release.release_date > stableDate) {
         addPrerelease(release);
         addedBeta = true;
       } else {
