@@ -3,6 +3,8 @@ body {
   background-color: #f6f6f6;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  height: 100%;
+  position: relative;
 }
 
 a {
@@ -43,6 +45,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 0 101%;
   background-size: 101%;
+  position: relative;
 }
 
 .col-md.text-center.mt-3 {
@@ -86,6 +89,18 @@ a:hover {
 
 .downloadButton:hover {
   background-color: #2d7a69;
+  transition-duration: 0.4s;
+}
+
+.downloadButtonSecondary {
+  background-color: #363636;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+  margin-right: 3%;
+}
+
+.downloadButtonSecondary:hover {
+  background-color: #555;
   transition-duration: 0.4s;
 }
 
@@ -136,7 +151,7 @@ a:hover {
   padding: 0 4em;
 }
 
-.btn:not(.downloadButton) {
+.btn:not(.downloadButton):not(.downloadButtonSecondary) {
   padding: 0.375rem 1.5rem;
 }
 
@@ -219,8 +234,8 @@ a.btn {
     padding: 0;
   }
 
-  .btn:not(.downloadButton) {
-    padding: 0.375rem 0;
+  .btn:not(.downloadButton):not(.downloadButtonSecondary) {
+    padding: 0.375rem 12px;
   }
 
   .col-md.text-center.mt-3 {
