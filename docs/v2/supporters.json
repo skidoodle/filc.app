@@ -15,13 +15,6 @@
       "platform": "donate"
     },
     {
-      "name": "Bumi",
-      "amount": "$5",
-      "platform": "donate"
-    }
-  ],
-  "all": [
-    {
       "name": "Neko Astolfo",
       "amount": "$3",
       "platform": "patreon"
@@ -30,21 +23,13 @@
       "name": "dobroben",
       "amount": "$3",
       "platform": "patreon"
-    },
+    }
+  ],
+  "all": [
     {
-      "name": "StokiBoti",
-      "amount": "$4",
+      "name": "Bumi",
+      "amount": "$5",
       "platform": "donate"
-    },
-    {
-      "name": "kaletaa",
-      "amount": "$3",
-      "platform": "donate"
-    },
-    {
-      "name": "chromium",
-      "amount": "$1",
-      "platform": "patreon"
     },
     {
       "name": "DarK",
@@ -60,6 +45,26 @@
       "name": "davie04",
       "amount": "$1",
       "platform": "patreon"
+    },
+    {
+      "name": "chromium",
+      "amount": "$1",
+      "platform": "patreon"
+    },
+    {
+      "name": "AquaWolf04",
+      "amount": "$1",
+      "platform": "patreon"
+    },
+    {
+      "name": "StokiBoti",
+      "amount": "$4",
+      "platform": "donate"
+    },
+    {
+      "name": "kaletaa",
+      "amount": "$3",
+      "platform": "donate"
     },
     {
       "name": "mima47",
