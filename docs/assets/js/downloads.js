@@ -259,16 +259,14 @@ getReleases().then((releases) => {
     latestPrereleaseContainer.append(releaseElement);
   }
 
-  // meh code
-
-  let stableDate = releases.find((r) => !r.prerelease).release_date;
+  let stableDate = releases.find((r) => !r.prerelease).published_at;
 
   for (let release of releases) {
     if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
-      if (release.prerelease && !addedBeta && release.release_date > stableDate) {
+      if (release.prerelease && !addedBeta && release.published_at > stableDate) {
         addPrerelease(release);
         addedBeta = true;
       } else {
