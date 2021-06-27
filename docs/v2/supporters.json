@@ -1,6 +1,6 @@
 {
   "progress": {
-    "value": 94,
+    "value": 100,
     "max": 100
   },
   "top": [
@@ -11,8 +11,8 @@
     },
     {
       "name": "- névtelen -",
-      "amount": "$5",
-      "platform": "patreon"
+      "amount": "$54",
+      "platform": "donate"
     },
     {
       "name": "Csizmadia F.",
@@ -21,6 +21,11 @@
     },
     {
       "name": "Neko Astolfo",
+      "amount": "$3",
+      "platform": "patreon"
+    },
+    {
+      "name": "fineszedző",
       "amount": "$3",
       "platform": "patreon"
     },
@@ -47,17 +52,7 @@
       "platform": "donate"
     },
     {
-      "name": "fineszedző",
-      "amount": "$1",
-      "platform": "patreon"
-    },
-    {
       "name": "davie04",
-      "amount": "$1",
-      "platform": "patreon"
-    },
-    {
-      "name": "AquaWolf04",
       "amount": "$1",
       "platform": "patreon"
     },
@@ -74,6 +69,11 @@
     {
       "name": "dobroben",
       "amount": "$3",
+      "platform": "donate"
+    },
+    {
+      "name": "AquaWolf04",
+      "amount": "$2",
       "platform": "donate"
     },
     {
