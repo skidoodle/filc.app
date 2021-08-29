@@ -4,29 +4,5 @@
     "content": "FONTOS! Ezt a verziót mindenképp telepítsd, ha Androidon vagy, a MEGNYITÁS gombbal töltheted le a telepítőt!\n\nMegérkezett a Filcbe az automata frissítő, ezek után az új verziókat az appon belül tudjátok telepíteni; így a hírlevélben is ez az utolsó alkalom hogy erről írunk nektek (másra azért fogjuk használni).\n\n2.1.4-től az app indításkor lekéri a GitHub oldalunkról a verziókat, ha talál újabbat mint önmaga, jelzi a profil ikonon egy \"pöttyel\", valamint megjelenik a profiloldalon egy értesítés. Ezt megnyomva megjelenik a frissítő, ahol ha bizonytalan vagy, a kérdőjelet megnyomva kaphatsz több infót.\nA frissítő normál esetben csak a stabil, elkészült verziókat kéri le, de ha akár tesztverziót is szívesen telepítesz, a fejleszői beállításokban a Kísérleti verziók keresése gombra kattintva egyszeri alkalommal lekérheted a legfrissebbet (nem biztos hogy lesz újabb mint a stabil verzió).\nKérdésekre a Discord szerverünkön tudunk válaszolni.\n\nEgyéb újdonságok:\n - Kréta karbantartás jelző\n - A linkek és a DKT egy alkalmazásba ágyazott Chrome ablakban nyílnak meg\n - Kezdőoldal hibajavítások\n - Órarendi napválasztó hibajavítások\n - Design változások (grafikonok kitöltése, tárgyi oldalon lezárások jelzése, szövegek végének levágása halványítással, egyebek)",
     "link": "https://github.com/filc/naplo/releases/download/2.1.4/hu.filcnaplo.ellenorzo_2.1.4.apk"
   },
-  {
-    "title": "Nem megjelenő szövegek, házi csatolmányok",
-    "content": "Többen is jeleztétek, hogy nem jelennek meg a házik, üzenetek, stb. szöveges tartalmai.\nA hiba csak bizonyos eszközöket érint, ha te is köztük vagy, így tudod tünetileg kezelni a problémát:\n\nA beállításokban kapcsold be a fejlesztői lehetőségeket, majd kapcsold be a HTML-renderelés opciót.\nHa már korábban bekapcsoltad és nem látod a szövegeket, kapcsold ki.\n\nA Kréta házik a DKT rendszerrel való szorosabb összefűzése miatt változott a csatolmányok rendszere is, ezért jelenleg ezek legtöbbször nem működnek a Filcben.\nMindkét hibát amint tudjuk, javítjuk, türelmeteket kérjük.\n\nHa elsők között szeretnél értesülni a frissítésekről, akár részt vennél a tesztelésben, csatlakozz Discord szerverünkhöz a MEGNYITÁS gombbal!\nNe felejtsd el ajánlani a Filcet osztálytársaidnak ;)",
-    "link": "https://discord.com/invite/GqzTJj5"
-  },
-  {
-    "title": "Ideiglenes átállás AppStoreban Test Flightra",
-    "content": "Ha Apple készüléken vagy, a MEGNYITÁS gombbal tudsz csatlakozni a \"tesztprogramhoz\", a megnyíló oldal végigvezet a letöltés lépésein.\n\nAndroidon is ajánljuk, hogy F-Droidból töltsétek le az appot. Ehhez videó tutorialt a filcnaplo.hu/dmca oldalon találtok.",
-    "link": "https://testflight.apple.com/join/Ak6I1C4C"
-  },
-  {
-    "title": "Új verzió: 2.1.2",
-    "content": "A 2.1.2 verzió újdonsága:\nJegyek rendezése lekérés után (éves átlag grafikon javítása) by @DarK\n\nLetölteni a 'MEGNYITÁS' gombra kattintva tudod.\nHa alkalmazásboltból töltötted le az appot, nem kell kézzel frissítened.\n\nMinden korábbi hírlevelet megtalálsz a Fiók > Beállítások > Névjegy > Hírek oldalon, ha most nem lenne érkezésed frissíteni.\n\n---\n\nEgyéb híreinkben: Az AppStore jelenlétünkben a hétvégén (2021. 03. 6-7.) jelentős változás várható. További infó később.",
-    "link": "https://github.com/filc/naplo/releases/download/2.1.2/hu.filcnaplo.ellenorzo_2.1.2.apk"
-  },
-  {
-    "title": "Új verzió: 2.1.1",
-    "content": "Mikrofonpróba...\nHa megkaptad ezt, a hírlevél funkció első éles tesztjét, jelezd a Discord szerverünk 📰-hírek szobájában reakcióval!\n(Ha nem vagy tagja, csatlakozz a filcnaplo.hu/discord oldalon.)\n\nA 2.1.1 verzió újdonságai:\n- Jelentős teljesítményoptimalizálás\n- Teljes záró kártya kattintható\n- Záró átlag hibajavítása\n- Fordítás javítások\n- Debug fiók javítások\n- Egyéb hibajavítások\n\nLetölteni a 'MEGNYITÁS' gombra kattintva tudod.\n\nMinden korábbi hírlevelet megtalálsz a Fiók > Beállítások > Névjegy > Hírek oldalon, ha most nem lenne érkezésed frissíteni.",
-    "link": "https://github.com/filc/naplo/releases/download/2.1.1/hu.filcnaplo.ellenorzo_2.1.1.apk"
-  },
-  {
-    "title": "Filc Hírlevél",
-    "content": "Ha új hír van a Filccel kapcsolatban (frissítési lehetőség, a Kréta legújabb gonosztettei), itt fogtok róla tudomást szerezni.\nHa ez ellenedre van, a beállításokban kikapcsolhatod a hírlevelet."
-  },
-  {},{},{}
+  {}, {}, {}, {}, {}, {}, {}, {}
 ]
