@@ -1,8 +1,3 @@
 [
-  {
-    "title": "Új verzió: 2.1.4 (Automata frissítő)",
-    "content": "FONTOS! Ezt a verziót mindenképp telepítsd, ha Androidon vagy, a MEGNYITÁS gombbal töltheted le a telepítőt!\n\nMegérkezett a Filcbe az automata frissítő, ezek után az új verziókat az appon belül tudjátok telepíteni; így a hírlevélben is ez az utolsó alkalom hogy erről írunk nektek (másra azért fogjuk használni).\n\n2.1.4-től az app indításkor lekéri a GitHub oldalunkról a verziókat, ha talál újabbat mint önmaga, jelzi a profil ikonon egy \"pöttyel\", valamint megjelenik a profiloldalon egy értesítés. Ezt megnyomva megjelenik a frissítő, ahol ha bizonytalan vagy, a kérdőjelet megnyomva kaphatsz több infót.\nA frissítő normál esetben csak a stabil, elkészült verziókat kéri le, de ha akár tesztverziót is szívesen telepítesz, a fejleszői beállításokban a Kísérleti verziók keresése gombra kattintva egyszeri alkalommal lekérheted a legfrissebbet (nem biztos hogy lesz újabb mint a stabil verzió).\nKérdésekre a Discord szerverünkön tudunk válaszolni.\n\nEgyéb újdonságok:\n - Kréta karbantartás jelző\n - A linkek és a DKT egy alkalmazásba ágyazott Chrome ablakban nyílnak meg\n - Kezdőoldal hibajavítások\n - Órarendi napválasztó hibajavítások\n - Design változások (grafikonok kitöltése, tárgyi oldalon lezárások jelzése, szövegek végének levágása halványítással, egyebek)",
-    "link": "https://github.com/filc/naplo/releases/download/2.1.4/hu.filcnaplo.ellenorzo_2.1.4.apk"
-  },
-  {}, {}, {}, {}, {}, {}, {}, {}
+  {}, {}, {}, {}, {}, {}, {}, {}, {}
 ]
