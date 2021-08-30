@@ -40,7 +40,7 @@ function getReleases(repo) {
 
 getReleases("filc/naplo-2-legacy").then((old_releases) => {
 getReleases("filc/naplo").then((releases) => {
-  releases = old_releases.concat(releases)
+  releases = releases.concat(old_releases)
   let container = document.querySelector("#releasesContainer");
   let counter = 0;
 
