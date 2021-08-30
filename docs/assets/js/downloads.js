@@ -9,13 +9,13 @@ const fadeIn = (element, duration) => {
   })();
 };
 
-function getReleases() {
+function getReleases(repo) {
   return new Promise((resolve, reject) => {
     let everythingContainer = document.querySelector("#everythingContainer");
     everythingContainer.innerHTML = `
     <center>
           <video src="/assets/img/loader.webm" autoplay="true" loop></video></center>`
-    fetch("https://api.github.com/repos/filcnaplo/filcnaplo/releases")
+    fetch("https://api.github.com/repos/"+repo+"/releases")
       .then((res) => res.json())
       .then((res_json) => {
         everythingContainer.innerHTML = `
@@ -29,7 +29,7 @@ function getReleases() {
         let latestPrereleaseContainer = document.querySelector("#latestBetaContainer");
         let latestReleaseContainer = document.querySelector("#latestReleaseContainer");
         container.innerHTML = `
-          <h3 class="redhat mb-5" style = "font-weight: 500;" >Régebbi verziók</h3>`;
+          <h3 class="redhat mb-5" style = "font-weight: 500;">Régebbi verziók</h3>`;
         latestReleaseContainer.innerHTML = `
           <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb verzió</h3>`;
         latestPrereleaseContainer.innerHTML = ` `;
@@ -38,7 +38,9 @@ function getReleases() {
   });
 }
 
-getReleases().then((releases) => {
+getReleases("filc/naplo-2-legacy").then((old_releases) => {
+getReleases("filc/naplo").then((releases) => {
+  releases = old_releases.concat(releases)
   let container = document.querySelector("#releasesContainer");
   let counter = 0;
 
@@ -277,4 +279,5 @@ getReleases().then((releases) => {
   }
 
   fadeIn(everythingContainer, 350);
+});
 });
