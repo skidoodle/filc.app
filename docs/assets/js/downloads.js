@@ -9,13 +9,13 @@ const fadeIn = (element, duration) => {
   })();
 };
 
-function getReleases() {
+function getReleases(repo) {
   return new Promise((resolve, reject) => {
     let everythingContainer = document.querySelector("#everythingContainer");
     everythingContainer.innerHTML = `
     <center>
           <video src="/assets/img/loader.webm" autoplay="true" loop></video></center>`
-    fetch("https://api.github.com/repos/filcnaplo/filcnaplo/releases")
+    fetch("https://api.github.com/repos/"+repo+"/releases")
       .then((res) => res.json())
       .then((res_json) => {
         everythingContainer.innerHTML = `
@@ -29,17 +29,18 @@ function getReleases() {
         let latestPrereleaseContainer = document.querySelector("#latestBetaContainer");
         let latestReleaseContainer = document.querySelector("#latestReleaseContainer");
         container.innerHTML = `
-          <h3 class="redhat mb-5" style = "font-weight: 500;" >Régebbi verziók</h3>`;
+          <h3 class="redhat mb-5" style = "font-weight: 500;">Régebbi verziók</h3>`;
         latestReleaseContainer.innerHTML = `
           <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb verzió</h3>`;
-        latestPrereleaseContainer.innerHTML = `
-          <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb béta</h3>`;
+        latestPrereleaseContainer.innerHTML = ` `;
         resolve(res_json);
       });
   });
 }
 
-getReleases().then((releases) => {
+getReleases("filc/naplo-2-legacy").then((old_releases) => {
+getReleases("filc/naplo").then((releases) => {
+  releases = releases.concat(old_releases)
   let container = document.querySelector("#releasesContainer");
   let counter = 0;
 
@@ -196,6 +197,7 @@ getReleases().then((releases) => {
   function addPrerelease(release) {
     let release_date = new Date(release.published_at);
     let compose = `
+      <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb kísérleti verzió</h3>
       <div class="release row redhat align-items-center mt-5 mb-5">
       <div class="col" style="white-space: nowrap;">
       
@@ -259,13 +261,14 @@ getReleases().then((releases) => {
     latestPrereleaseContainer.append(releaseElement);
   }
 
-  // meh code
+  let stableDate = releases.find((r) => !r.prerelease).published_at;
+
   for (let release of releases) {
     if (!addedFirst && !release.prerelease) {
       addedFirst = true;
       addFirstRelease(release);
     } else {
-      if (release.prerelease && !addedBeta) {
+      if (release.prerelease && !addedBeta && release.published_at > stableDate) {
         addPrerelease(release);
         addedBeta = true;
       } else {
@@ -276,4 +279,5 @@ getReleases().then((releases) => {
   }
 
   fadeIn(everythingContainer, 350);
+});
 });

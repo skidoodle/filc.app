@@ -1,6 +1,6 @@
 {
   "progress": {
-    "value": 79,
+    "value": 100,
     "max": 100
   },
   "top": [
@@ -10,25 +10,50 @@
       "platform": "donate"
     },
     {
-      "name": "manen",
-      "amount": "$6.9",
+      "name": "- névtelen -",
+      "amount": "$54",
       "platform": "donate"
     },
     {
-      "name": "Bumi",
+      "name": "Csizmadia F.",
       "amount": "$5",
-      "platform": "donate"
-    }
-  ],
-  "all": [
+      "platform": "patreon"
+    },
     {
       "name": "Neko Astolfo",
       "amount": "$3",
       "platform": "patreon"
     },
     {
-      "name": "dobroben",
+      "name": "fineszedző",
       "amount": "$3",
+      "platform": "patreon"
+    },
+    {
+      "name": "Horváth T.",
+      "amount": "$14",
+      "platform": "donate"
+    }
+  ],
+  "all": [
+    {
+      "name": "manen",
+      "amount": "$6.9",
+      "platform": "donate"
+    },
+    {
+      "name": "kaletaa",
+      "amount": "$6",
+      "platform": "donate"
+    },
+    {
+      "name": "Bumi",
+      "amount": "$5",
+      "platform": "donate"
+    },
+    {
+      "name": "davie04",
+      "amount": "$1",
       "platform": "patreon"
     },
     {
@@ -37,29 +62,24 @@
       "platform": "donate"
     },
     {
-      "name": "kaletaa",
+      "name": "DarK",
       "amount": "$3",
       "platform": "donate"
     },
     {
+      "name": "dobroben",
+      "amount": "$3",
+      "platform": "donate"
+    },
+    {
+      "name": "AquaWolf04",
+      "amount": "$2",
+      "platform": "donate"
+    },
+    {
       "name": "chromium",
-      "amount": "$1",
-      "platform": "patreon"
-    },
-    {
-      "name": "DarK",
-      "amount": "$1",
-      "platform": "patreon"
-    },
-    {
-      "name": "fineszedző",
-      "amount": "$1",
-      "platform": "patreon"
-    },
-    {
-      "name": "davie04",
-      "amount": "$1",
-      "platform": "patreon"
+      "amount": "$2",
+      "platform": "donate"
     },
     {
       "name": "mima47",
