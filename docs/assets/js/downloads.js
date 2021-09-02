@@ -109,7 +109,7 @@ getReleases("filc/naplo").then((releases) => {
           <img src="/assets/img/icons/download.svg" alt="Download" class="mr-1">
           <span>Letöltés</span>
         </a>
-        <a  href="https://testflight.apple.com/join/Ak6I1C4C"
+        <a  href="https://testflight.apple.com/join/AIEKpVYq"
             target="_blank"
             class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft mb-2"
             style="white-space: nowrap;display:block;background-color:black">
