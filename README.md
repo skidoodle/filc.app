@@ -4,3 +4,26 @@
 </p>
 
 ### A Filc Napló weboldalának kódja
+
+# Filc API
+
+### Base: `https://filcnaplo.hu/v2`
+
+## News API
+
+**GET** `/news.json`
+
+Example response:
+
+```json
+[
+  {
+    "title": "Example",
+    "content": "This is an example news.",
+    "link": "https://example.com/",
+    "open_label": "install",
+    "platform": "android|ios|linux|windows|macos",
+    "emergency": true
+  }
+]
+```
