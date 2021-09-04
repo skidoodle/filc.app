@@ -9,6 +9,22 @@
 
 ### Base: `https://filcnaplo.hu/v2`
 
+## Schools API
+
+**GET** `/school_list.json`
+
+Example response:
+
+```json
+[
+  {
+    "instituteCode": "example",
+    "name": "Example School",
+    "city": "Budapest"
+  }
+]
+```
+
 ## News API
 
 **GET** `/news.json`
