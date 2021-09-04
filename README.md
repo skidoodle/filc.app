@@ -1,9 +1,8 @@
-<p align=center>
-  <img src="docs/assets/img/android-chrome-384x384.png" width=150>
-  <h1 align=center><a href="https://filcnaplo.hu">Weboldal</a></h1>
-</p>
+![](filcnaplo.hu.png)
 
-### A Filc Napló weboldalának kódja
+# A Filc Napló weboldalának forrása
+
+<br>
 
 # Filc API
 
