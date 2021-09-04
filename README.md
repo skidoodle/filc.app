@@ -27,3 +27,32 @@ Example response:
   }
 ]
 ```
+
+## Supporters API
+
+**GET** `/supporters.json`
+
+Example response:
+
+```json
+{
+  "progress": {
+    "value": 50,
+    "max": 100
+  },
+  "top": [
+    {
+      "name": "example",
+      "amount": "$50",
+      "platform": "donate"
+    }
+  ],
+  "all": [
+    {
+      "name": "example 2",
+      "amount": "$5",
+      "platform": "patreon"
+    },
+  ]
+}
+```
