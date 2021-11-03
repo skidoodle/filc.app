@@ -1,6 +1,6 @@
 {
   "progress": {
-    "value": 10,
+    "value": 30,
     "max": 100
   },
   "top": [
@@ -15,6 +15,11 @@
       "platform": "donate"
     },
     {
+      "name": "Neko Astolfo",
+      "amount": "$40",
+      "platform": "donate"
+    },
+    {
       "name": "Kovax",
       "amount": "$6.9",
       "platform": "patreon"
@@ -22,11 +27,6 @@
     {
       "name": "Csizmadia F.",
       "amount": "$5",
-      "platform": "patreon"
-    },
-    {
-      "name": "Neko Astolfo",
-      "amount": "$3",
       "platform": "patreon"
     },
     {
@@ -55,6 +55,11 @@
       "name": "Bumi",
       "amount": "$5",
       "platform": "donate"
+    },
+    {
+      "name": "Ábel",
+      "amount": "$1",
+      "platform": "patreon"
     },
     {
       "name": "davie04",
