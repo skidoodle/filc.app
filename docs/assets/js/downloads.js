@@ -63,7 +63,7 @@ getReleases("filc/naplo").then((releases) => {
         <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
 
         <div class="col-md-3 mobilePaddingTop" style="padding-bottom:0"></div>
-        
+
         <div class="col" style="white-space: nowrap;">
         <a href="${release.html_url}" class="github text-dark">
         <img src="/assets/img/icons/github-dark.svg" alt="Github" style="color:#212121" class="mr-1">
@@ -103,8 +103,8 @@ getReleases("filc/naplo").then((releases) => {
       </div>
 
       <div class="mb-5 mt-2 d-flex row" style="justify-content: center">
-        <a  href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
-            class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft mb-2" 
+        <a  href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}"
+            class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft mb-2"
             style="white-space: nowrap; ${release.assets[0] ? "display: block" : "display: none !important"}">
           <img src="/assets/img/icons/download.svg" alt="Download" class="mr-1">
           <span>Letöltés</span>
@@ -115,13 +115,6 @@ getReleases("filc/naplo").then((releases) => {
             style="white-space: nowrap;display:block;background-color:black">
           <img src="/assets/img/icons/apple.svg" alt="App Store" class="mr-1 mb-1" height="24">
           <span>App Store</span>
-        </a>
-        <a  href="fdroidrepos://filcnaplo.hu/fdroid/repo/"
-            target="_blank"
-            class="btn downloadButton text-white d-inline align-items-center mobileMarginLeft mb-2"
-            style="white-space:nowrap;display:block;background-color:#295384">
-          <img src="/assets/img/icons/fdroid.svg" alt="FDroid" class="mr-1 mb-1" height="24">
-          <span>FDroid</span>
         </a>
       </div>`;
 
@@ -143,7 +136,7 @@ getReleases("filc/naplo").then((releases) => {
       <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
 
       <div class="col-md-3 mobilePaddingTop" style="padding-bottom:0"></div>
-      
+
       <div class="col" style="white-space: nowrap;">
       <a href="${release.html_url}" class="github text-dark">
       <img src="/assets/img/icons/github-dark.svg" alt="Github" style="color:#212121" class="mr-1">
@@ -156,8 +149,8 @@ getReleases("filc/naplo").then((releases) => {
       </div>
 
       <div class="col" >
-      <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
-          class="btn downloadButtonSecondary text-white d-inline align-items-center mobileMarginLeft" 
+      <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}"
+          class="btn downloadButtonSecondary text-white d-inline align-items-center mobileMarginLeft"
           style="white-space: nowrap; ${release.assets[0] ? "" : "display: none !important"}">
       <img src="/assets/img/icons/download.svg" alt="Download" class="mr-1">
       <span>Letöltés</span></a>
@@ -200,7 +193,7 @@ getReleases("filc/naplo").then((releases) => {
       <h3 class="redhat mb-5" style="font-weight: 500;">Legújabb kísérleti verzió</h3>
       <div class="release row redhat align-items-center mt-5 mb-5">
       <div class="col" style="white-space: nowrap;">
-      
+
       <a class="version mt-0 mb-0 text-black"  data-toggle="modal" data-target="#modal${counter}">
         ${release.name}
       </a></div>
@@ -209,7 +202,7 @@ getReleases("filc/naplo").then((releases) => {
       <p class="date mt-0 mb-0">${release_date.toLocaleDateString()}</p></div>
 
       <div class="col-md-3 mobilePaddingTop" style="padding-bottom:0"></div>
-      
+
       <div class="col" style="white-space: nowrap;">
       <a href="${release.html_url}" class="github text-dark">
       <img src="/assets/img/icons/github-dark.svg" alt="Github" style="color:#212121" class="mr-1">
@@ -222,8 +215,8 @@ getReleases("filc/naplo").then((releases) => {
       </div>
 
       <div class="col" >
-      <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}" 
-          class="btn downloadButtonSecondary text-white d-inline align-items-center mobileMarginLeft" 
+      <a href="${release.assets[0] ? release.assets[0].browser_download_url : "#"}"
+          class="btn downloadButtonSecondary text-white d-inline align-items-center mobileMarginLeft"
           style="white-space: nowrap; ${release.assets[0] ? "" : "display: none !important"}">
       <img src="/assets/img/icons/download.svg" alt="Download" class="mr-1">
       <span>Letöltés</span></a>
