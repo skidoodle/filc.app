@@ -1,6 +1,6 @@
 {
   "progress": {
-    "value": 30,
+    "value": 52,
     "max": 100
   },
   "top": [
@@ -22,6 +22,11 @@
     {
       "name": "Kovax",
       "amount": "$6.9",
+      "platform": "patreon"
+    },
+    {
+      "name": "Nagy Márk",
+      "amount": "$5",
       "platform": "patreon"
     },
     {
@@ -55,6 +60,16 @@
       "name": "Bumi",
       "amount": "$5",
       "platform": "donate"
+    },
+    {
+      "name": "xou",
+      "amount": "$1",
+      "platform": "patreon"
+    },
+    {
+      "name": "dikahoff",
+      "amount": "$1",
+      "platform": "patreon"
     },
     {
       "name": "Ábel",
