@@ -1,4 +1,4 @@
-![](filcnaplo.hu.png)
+![](filcnaplo.hu.png) 
 
 # A Filc Napló weboldalának forrása
 
