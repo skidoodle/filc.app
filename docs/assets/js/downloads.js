@@ -270,6 +270,12 @@ getReleases("filc/naplo").then((releases) => {
     }
     counter++;
   }
+  
+  if (releases.length == 0) {
+    let notLoadedElement = document.createElement("div");
+    notLoadedElement.innerHTML = `<h4>Nem sikerült betölteni az oldalt. A verziókat megtalálod a <a href="https://github.com/filc/naplo/releases">GitHub oldalunkon.</a></h4>`;
+    latestReleaseContainer.append(notLoadedElement);
+  }
 
   fadeIn(everythingContainer, 350);
 });
