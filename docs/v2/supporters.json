@@ -1,12 +1,17 @@
 {
   "progress": {
-    "value": 52,
+    "value": 11,
     "max": 100
   },
   "top": [
     {
       "name": "valQ",
       "amount": "$100",
+      "platform": "donate"
+    },
+    {
+      "name": "Kovax",
+      "amount": "$75.9",
       "platform": "donate"
     },
     {
@@ -20,9 +25,9 @@
       "platform": "donate"
     },
     {
-      "name": "Kovax",
-      "amount": "$6.9",
-      "platform": "patreon"
+      "name": "Horváth T.",
+      "amount": "$14",
+      "platform": "donate"
     },
     {
       "name": "Nagy Márk",
@@ -38,11 +43,6 @@
       "name": "fineszedző",
       "amount": "$3",
       "platform": "patreon"
-    },
-    {
-      "name": "Horváth T.",
-      "amount": "$14",
-      "platform": "donate"
     }
   ],
   "all": [
@@ -69,12 +69,12 @@
     {
       "name": "dikahdoff",
       "amount": "$1",
-      "platform": "patreon"
+      "platform": "donate"
     },
     {
       "name": "Ábel",
       "amount": "$1",
-      "platform": "patreon"
+      "platform": "donate"
     },
     {
       "name": "davie04",
@@ -84,7 +84,7 @@
     {
       "name": "Techno",
       "amount": "$1",
-      "platform": "patreon"
+      "platform": "donate"
     },
     {
       "name": "Stoke",
@@ -129,7 +129,7 @@
     {
       "name": "I existn't",
       "amount": "$1",
-      "platform": "patreon"
+      "platform": "donate"
     }
   ]
 }
