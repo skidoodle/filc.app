@@ -45,6 +45,8 @@ Example response:
 
 ## Supporters API
 
+# DEPRECATED! (use https://api.filcnaplo.hu/sponsors)
+
 **GET** `/supporters.json`
 
 Example response:
