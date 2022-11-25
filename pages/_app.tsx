@@ -20,7 +20,11 @@ export default function App({ Component, pageProps }: AppProps) {
           content="filc,naplo,filcnaplo,enaplo,e-naplo,napló,filc napló,e-napló,alkalmazás,kréta,ekréta,kreta,ekreta,diák,diak,szivacs"
         />
 
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/img/favicon-32x32.png"
+          type="image/png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
       </Head>
