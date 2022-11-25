@@ -14,13 +14,12 @@ export default function Home() {
         }}
       >
         <Navbar.Brand>
-          <Navbar.Toggle aria-label="toggle navigation" />
           <Image
             src={"/img/logo.svg"}
             alt={"logo"}
             height={48}
             width={48}
-            style={{ marginLeft: 24, borderRadius: 16 }}
+            style={{ borderRadius: 16 }}
           />
         </Navbar.Brand>
         <Navbar.Content
@@ -41,7 +40,9 @@ export default function Home() {
             GitHub
           </Navbar.Link>
         </Navbar.Content>
-        <Navbar.Content></Navbar.Content>
+        <Navbar.Content>
+          <Navbar.Toggle aria-label="toggle navigation" />
+        </Navbar.Content>
         <Navbar.Collapse>
           <Navbar.CollapseItem isActive activeColor={"primary"}>
             <Link
