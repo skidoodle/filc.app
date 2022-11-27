@@ -1,22 +1,8 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { createTheme, NextUIProvider } from "@nextui-org/react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const theme = createTheme({
-    type: "light",
-    theme: {
-      colors: {
-        primary: "#01342D",
-      },
-      space: {},
-      fonts: {
-        sans: "Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-      },
-    },
-  });
-
   return (
     <>
       <Head>
@@ -42,9 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
       </Head>
-      <NextUIProvider theme={theme}>
-        <Component {...pageProps} />
-      </NextUIProvider>
+      <Component {...pageProps} />
     </>
   );
 }

@@ -1,105 +1,73 @@
-import { Link, Navbar } from "@nextui-org/react";
+import FilcNavBar from "lib/components/navbar";
 import Image from "next/image";
+import styles from "styles/Home.module.scss";
+import { motion as m } from "framer-motion";
 
 export default function Home() {
   return (
     <>
-      <Navbar
-        variant={"sticky"}
-        disableShadow
-        disableBlur
-        css={{
-          $$navbarBackgroundColor: "transparent",
-          $$navbarBlurBackgroundColor: "transparent",
-        }}
-      >
-        <Navbar.Brand>
-          <Image
-            src={"/img/logo.svg"}
-            alt={"logo"}
-            height={48}
-            width={48}
-            style={{ borderRadius: 16 }}
-          />
-        </Navbar.Brand>
-        <Navbar.Content
-          enableCursorHighlight
-          hideIn={"xs"}
-          activeColor="primary"
-        >
-          <Navbar.Link href="/" isActive color={"primary"}>
-            Kezdőlap
-          </Navbar.Link>
-          <Navbar.Link href="/downloads" color={"primary"}>
-            Letöltés
-          </Navbar.Link>
-          <Navbar.Link href="/premium" color={"primary"}>
-            Premium
-          </Navbar.Link>
-          <Navbar.Link href="https://github.com/filc/naplo" color={"primary"}>
-            GitHub
-          </Navbar.Link>
-        </Navbar.Content>
-        <Navbar.Content>
-          <Navbar.Toggle aria-label="toggle navigation" />
-        </Navbar.Content>
-        <Navbar.Collapse>
-          <Navbar.CollapseItem isActive activeColor={"primary"}>
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-              href="/"
-            >
-              Kezdőlap
-            </Link>
-          </Navbar.CollapseItem>
-          <Navbar.CollapseItem>
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-              href="/downloads"
-            >
-              Letöltés
-            </Link>
-          </Navbar.CollapseItem>
-          <Navbar.CollapseItem>
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-              href="/premium"
-            >
-              Premium
-            </Link>
-          </Navbar.CollapseItem>
-          <Navbar.CollapseItem>
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-              href="https://github.com/filc/naplo"
-            >
-              GitHub
-            </Link>
-          </Navbar.CollapseItem>
-        </Navbar.Collapse>
-      </Navbar>
+      <FilcNavBar />
       <div
-        className="flex flex-col gap-4 items-center justify-center h-full"
-        style={{ marginTop: -76 }}
+        className="flex flex-col gap-12 items-center justify-center min-h-full"
+        style={{ marginTop: -76 / 2 }}
       >
-        <Image
-          src={"/img/iphonecropped 2.png"}
-          alt={"Filc"}
-          width={584 / 2}
-          height={702 / 2}
-        />
+        <div className={styles.container}>
+          <m.img
+            className="z-20"
+            src={"/img/iphonecropped 2.png"}
+            alt="Filc"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                opacity: 0,
+                marginTop: 12,
+              },
+              visible: {
+                opacity: 1,
+                marginTop: 0,
+              },
+            }}
+          />
+          <m.div
+            className={`z-10 ${styles.title}`}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                top: "calc(50% + 4em)",
+                opacity: 0,
+              },
+              visible: {
+                top: "50%",
+                opacity: 1,
+                transition: { delay: 0.2 },
+              },
+            }}
+          >
+            <h1>Egy nem hivatalos alkalmazás az eKréta rendszerhez</h1>
+          </m.div>
+          <m.div
+            className={`z-30 ${styles.title}`}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                top: "calc(50% + 4em)",
+                opacity: 0,
+              },
+              visible: {
+                top: "50%",
+                opacity: 1,
+                transition: { delay: 0.2 },
+              },
+            }}
+          >
+            <h1 className={styles.highlight}>
+              Egy nem hivatalos alkalmazás az eKréta rendszerhez
+            </h1>
+          </m.div>
+        </div>
       </div>
     </>
   );
