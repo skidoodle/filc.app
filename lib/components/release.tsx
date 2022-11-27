@@ -8,10 +8,10 @@ export default function ReleaseCard({ release }: any) {
       style={{ background: "#F1FFFF" }}
       key={release.tag_name}
     >
-      <div className="flex flex-col">
+      <div className="flex-col flex">
         <span className="font-bold">{release.name}</span>
         <div className="flex gap-4">
-          <div>
+          <div className="block">
             {new Date(release.published_at).toLocaleDateString("hu-HU")}
           </div>
           <div className="flex items-center gap-2">
@@ -24,7 +24,7 @@ export default function ReleaseCard({ release }: any) {
       </div>
       <div className="flex gap-2 items-center h-8">
         <div
-          className="noselect rounded-xl px-4 py-2 border border-solid cursor-pointer"
+          className="noselect rounded-xl px-4 py-2 border border-solid cursor-pointer hidden md:block"
           style={{ color: "#222", borderColor: "#222" }}
           onClick={() => window.open(release.html_url)}
         >

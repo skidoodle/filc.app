@@ -22,7 +22,7 @@ export default function Downloads({ releases }: DownloadsProps) {
         style={{ background: "linear-gradient(#FFFFFF00, #0DE3B533)" }}
         className="h-full pb-6"
       >
-        <div className="flex justify-center w-full my-2 lg:my-0 lg:w-4/5 m-auto mt-12 lg:mt-24 gap-16">
+        <div className="flex justify-center w-full px-4 lg:px-0 lg:w-4/5 m-auto mt-12 lg:mt-24 gap-16">
           <m.div
             className="flex flex-col gap-8"
             initial="hidden"
