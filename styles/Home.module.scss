@@ -16,8 +16,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
     height: 100%;
+    width: 50%;
 
     h1 {
       position: absolute;
@@ -33,6 +33,25 @@
       color: #00ffd17f;
       mask: url("/img/iphonecropped 2.png") center no-repeat;
       mask-size: 67vh;
+    }
+  }
+
+  @media (orientation: portrait) {
+    img {
+      height: auto;
+      width: 80vw;
+    }
+
+    .title {
+      width: 100%;
+
+      h1 {
+        font-size: 9vw;
+      }
+
+      h1.highlight {
+        mask-size: 80vw;
+      }
     }
   }
 }
