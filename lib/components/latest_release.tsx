@@ -34,8 +34,9 @@ export default function LatestReleaseCard({ latest }: any) {
       <ReactMarkdown className="mt-6">{latest.body}</ReactMarkdown>
       <div className="flex gap-4 mt-4">
         <div
-          className="flex items-center font-semibold text-white cursor-pointer px-6 py-2 rounded-xl"
+          className="noselect flex items-center font-semibold text-white cursor-pointer px-6 py-2 rounded-xl"
           style={{ background: "#01342D" }}
+          onClick={() => window.open(latest.assets[0].browser_download_url)}
         >
           <div style={{ width: 16, marginRight: 12 }}>
             <DownloadIcon />
@@ -43,8 +44,9 @@ export default function LatestReleaseCard({ latest }: any) {
           APK
         </div>
         <div
-          className="flex items-center font-semibold cursor-pointer border border-solid px-4 rounded-xl"
+          className="noselect flex items-center font-semibold cursor-pointer border border-solid px-4 rounded-xl"
           style={{ borderColor: "#01342D" }}
+          onClick={() => window.open(latest.html_url)}
         >
           <div style={{ width: 16, marginRight: 12 }}>
             <GithubIcon />

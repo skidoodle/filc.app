@@ -24,16 +24,18 @@ export default function ReleaseCard({ release }: any) {
       </div>
       <div className="flex gap-2 items-center h-8">
         <div
-          className="rounded-xl px-4 py-2 border border-solid cursor-pointer"
+          className="noselect rounded-xl px-4 py-2 border border-solid cursor-pointer"
           style={{ color: "#222", borderColor: "#222" }}
+          onClick={() => window.open(release.html_url)}
         >
           <div className="w-5 h-5">
             <GithubIcon />
           </div>
         </div>
         <div
-          className="rounded-xl px-4 py-2 cursor-pointer"
+          className="noselect rounded-xl px-4 py-2 cursor-pointer"
           style={{ background: "#01342D", color: "#fff" }}
+          onClick={() => window.open(release.assets[0].browser_download_url)}
         >
           <div className="w-5 h-5">
             <DownloadIcon />

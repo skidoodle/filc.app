@@ -46,6 +46,9 @@ export default function Downloads({ releases }: DownloadsProps) {
               <div
                 className="noselect flex items-center px-6 py-2 rounded-2xl text-xl font-semibold text-white cursor-pointer shadow-md"
                 style={{ background: "#278076", fontSize: 18, fontWeight: 600 }}
+                onClick={() =>
+                  window.open("https://testflight.apple.com/join/AIEKpVYq")
+                }
               >
                 <div style={{ height: 20, marginRight: 12 }}>
                   <AppleIcon />
@@ -55,6 +58,9 @@ export default function Downloads({ releases }: DownloadsProps) {
               <div
                 className="noselect flex items-center px-6 py-2 rounded-2xl text-xl font-semibold text-white cursor-pointer shadow-md"
                 style={{ background: "#278076", fontSize: 18, fontWeight: 600 }}
+                onClick={() =>
+                  window.open(releases[0].assets[0].browser_download_url)
+                }
               >
                 <div style={{ height: 20, marginRight: 12 }}>
                   <DownloadIcon />
