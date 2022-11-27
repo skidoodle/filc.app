@@ -10,6 +10,7 @@ import CloseIcon from "./icons/close.svg";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useState } from "react";
+import { motion as m, AnimatePresence } from "framer-motion";
 
 interface NavbarItem {
   title: string;
@@ -148,29 +149,35 @@ export default function FilcNavBar() {
             );
           })}
         </div>
-        <div
-          className={`flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full ${
-            isOpen ? "flex" : "hidden"
-          }`}
-        >
-          {[...navbarItems, ...connectionItems].map((item) => {
-            return (
-              <Link
-                color="inherit"
-                className="noselect flex items-center text-white rounded-full px-4 py-2 gap-4 mr-auto"
-                key={item.href}
-                href={item.href}
-                style={{
-                  background: item.color,
-                  fontWeight: location.pathname == item.href ? "700" : "500",
-                }}
-              >
-                <div style={{ height: 20 }}>{item.icon}</div>
-                {item.title}
-              </Link>
-            );
-          })}
-        </div>
+        <AnimatePresence>
+          {isOpen && (
+            <m.div
+              className="flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full flex"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {[...navbarItems, ...connectionItems].map((item) => {
+                return (
+                  <Link
+                    color="inherit"
+                    className="noselect flex items-center text-white rounded-full px-4 py-2 gap-4 mr-auto"
+                    key={item.href}
+                    href={item.href}
+                    style={{
+                      background: item.color,
+                      fontWeight:
+                        location.pathname == item.href ? "700" : "500",
+                    }}
+                  >
+                    <div style={{ height: 20 }}>{item.icon}</div>
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </m.div>
+          )}
+        </AnimatePresence>
       </div>
     </>
   );
