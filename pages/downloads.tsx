@@ -69,7 +69,9 @@ export default function Downloads({ releases }: DownloadsProps) {
               <span className="font-bold">Régebbi verziók</span>
               <div>
                 {releases.slice(1).map((release: any) => {
-                  return <ReleaseCard release={release} />;
+                  return (
+                    <ReleaseCard release={release} key={release.tag_name} />
+                  );
                 })}
               </div>
             </div>
