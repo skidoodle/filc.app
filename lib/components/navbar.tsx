@@ -6,6 +6,7 @@ import PremiumIcon from "./icons/sparkle.svg";
 import GithubIcon from "./icons/github.svg";
 import DiscordIcon from "./icons/discord.svg";
 import MenuIcon from "./icons/menu.svg";
+import CloseIcon from "./icons/close.svg";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useState } from "react";
@@ -71,7 +72,7 @@ export default function FilcNavBar() {
           background: "#e8fffb99",
         }}
       >
-        <div className="flex items-center">
+        <div className="noselect flex items-center">
           <div style={{ width: 200 }} className="lg:w-auto">
             <Image
               src="/img/logo.svg"
@@ -89,7 +90,7 @@ export default function FilcNavBar() {
           {navbarItems.map((item) => {
             return (
               <Link
-                className="flex items-center"
+                className="noselect flex items-center"
                 href={item.href}
                 key={item.href}
                 color="primary"
@@ -111,16 +112,16 @@ export default function FilcNavBar() {
         <div className="sm:hidden flex">
           <div
             className="cursor-pointer py-2 px-1"
-            onClick={() => setOpen(true)}
+            onClick={() => setOpen(!isOpen)}
           >
-            <MenuIcon />
+            {isOpen ? <CloseIcon /> : <MenuIcon />}
           </div>
         </div>
         <div className="lg:flex items-center gap-4 hidden">
           {connectionItems.map((item) => {
             return (
               <Link
-                className="flex items-center justify-center"
+                className="noselect flex items-center justify-center"
                 href={item.href}
                 key={item.href}
                 style={{
@@ -156,7 +157,7 @@ export default function FilcNavBar() {
             return (
               <Link
                 color="inherit"
-                className="flex items-center text-white rounded-full px-4 py-2 gap-4 mr-auto"
+                className="noselect flex items-center text-white rounded-full px-4 py-2 gap-4 mr-auto"
                 key={item.href}
                 href={item.href}
                 style={{
