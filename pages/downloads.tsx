@@ -47,7 +47,7 @@ export default function Downloads({ releases }: DownloadsProps) {
               </h1>
               <div className="flex gap-2">
                 <div
-                  className="noselect flex items-center px-6 py-2 rounded-2xl text-2xl font-bold text-white cursor-pointer shadow-md"
+                  className="noselect flex items-center px-8 py-2 rounded-2xl text-xl font-bold text-white cursor-pointer shadow-md"
                   style={{
                     background: "#278076",
                   }}
@@ -61,7 +61,7 @@ export default function Downloads({ releases }: DownloadsProps) {
                   <span>iOS</span>
                 </div>
                 <div
-                  className="noselect flex items-center px-6 py-2 rounded-2xl text-2xl font-bold text-white cursor-pointer shadow-md"
+                  className="noselect flex items-center px-8 py-2 rounded-2xl text-xl font-bold text-white cursor-pointer shadow-md"
                   style={{
                     background: "#278076",
                   }}
