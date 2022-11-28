@@ -70,7 +70,7 @@ export default function FilcNavBar() {
       <div
         className="flex items-center justify-between backdrop-blur-lg p-4 sticky top-0 left-0 z-50 h-20"
         style={{
-          background: "#e8fffb99",
+          background: "#E8FFFBAA",
         }}
       >
         <div className="noselect flex items-center">
@@ -152,27 +152,51 @@ export default function FilcNavBar() {
         <AnimatePresence>
           {isOpen && (
             <m.div
-              className="flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full flex"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              className="flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full flex pointer-events-none"
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={{
+                hidden: {
+                  opacity: 0,
+                },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    delayChildren: 0.2,
+                    staggerChildren: 0.1,
+                  },
+                },
+              }}
             >
               {[...navbarItems, ...connectionItems].map((item) => {
                 return (
-                  <Link
-                    color="inherit"
-                    className="noselect flex items-center text-white rounded-full px-4 py-2 gap-4 mr-auto"
+                  <m.div
                     key={item.href}
-                    href={item.href}
-                    style={{
-                      background: item.color,
-                      fontWeight:
-                        location.pathname == item.href ? "700" : "500",
+                    variants={{
+                      hidden: { y: 20, opacity: 0 },
+                      visible: {
+                        y: 0,
+                        opacity: 1,
+                      },
                     }}
                   >
-                    <div style={{ height: 20 }}>{item.icon}</div>
-                    {item.title}
-                  </Link>
+                    <Link
+                      color="inherit"
+                      className="noselect flex items-center text-white rounded-full px-6 py-2 gap-4 mr-auto"
+                      href={item.href}
+                      style={{
+                        background: item.color,
+                        fontWeight:
+                          location.pathname == item.href ? "700" : "500",
+                      }}
+                    >
+                      <div style={{ width: 30 }}>
+                        <div style={{ height: 20 }}>{item.icon}</div>
+                      </div>
+                      {item.title}
+                    </Link>
+                  </m.div>
                 );
               })}
             </m.div>
