@@ -109,7 +109,7 @@ export default function Home() {
           <ShowcaseSlide
             title={<span>Meglepetés jegyek</span>}
             description="Néha olyan, mintha egy szerencsejáték lenne, hogy hányasra sikerül a dolgozatod? A Filccel ez valóság lehet."
-            asset="backpack"
+            customAsset={<Backpack />}
             arrangement="right"
           />
         </div>
