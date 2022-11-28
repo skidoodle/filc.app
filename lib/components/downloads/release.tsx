@@ -1,5 +1,5 @@
-import DownloadIcon from "./icons/download.svg";
-import GithubIcon from "./icons/github.svg";
+import DownloadIcon from "../icons/download.svg";
+import GithubIcon from "../icons/github.svg";
 
 export default function ReleaseCard({ release }: any) {
   return (

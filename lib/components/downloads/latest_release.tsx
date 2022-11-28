@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
-import StarIcon from "./icons/star.svg";
-import DownloadIcon from "./icons/download.svg";
-import GithubIcon from "./icons/github.svg";
+import StarIcon from "../icons/star.svg";
+import DownloadIcon from "../icons/download.svg";
+import GithubIcon from "../icons/github.svg";
 
 export default function LatestReleaseCard({ latest }: any) {
   return (

@@ -2,7 +2,7 @@ import FilcNavBar from "lib/components/navbar";
 import Image from "next/image";
 import styles from "styles/Home.module.scss";
 import { motion as m } from "framer-motion";
-import ShowcaseSlide from "lib/components/showcase";
+import ShowcaseSlide from "lib/components/showcase/showcase";
 import Backpack from "lib/components/showcase/backpack";
 
 export default function Home() {

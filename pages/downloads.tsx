@@ -4,8 +4,8 @@ import Head from "next/head";
 import DownloadIcon from "../lib/components/icons/download.svg";
 import AppleIcon from "../lib/components/icons/apple.svg";
 import { motion as m } from "framer-motion";
-import LatestReleaseCard from "lib/components/latest_release";
-import ReleaseCard from "lib/components/release";
+import LatestReleaseCard from "lib/components/downloads/latest_release";
+import ReleaseCard from "lib/components/downloads/release";
 
 interface DownloadsProps {
   releases: any[];
@@ -91,7 +91,7 @@ export default function Downloads({ releases }: DownloadsProps) {
             </div>
           </m.div>
           <m.div
-            className="hidden h-screen lg:flex flex-col justify-center items-start -mt-20"
+            className="hidden h-screen lg:flex flex-col justify-center items-start -mt-20 sticky right-0 top-0"
             style={{ width: "50%" }}
             initial="hidden"
             animate="visible"
