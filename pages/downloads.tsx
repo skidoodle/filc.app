@@ -38,7 +38,7 @@ export default function Downloads({ releases }: DownloadsProps) {
               },
             }}
           >
-            <div className="flex flex-col h-auto lg:h-screen items-start justify-center gap-4 lg:gap-8 mt-4 lg:-mt-20">
+            <div className="flex flex-col h-auto lg:h-screen items-start justify-center gap-4 lg:gap-8 mt-4 lg:-mt-20 lg:-mb-44">
               <h1
                 className="text-5xl lg:text-7xl font-extrabold"
                 style={{ lineHeight: 1 }}
