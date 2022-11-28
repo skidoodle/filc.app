@@ -154,7 +154,7 @@ export default function FilcNavBar() {
         <AnimatePresence>
           {isOpen && (
             <m.div
-              className="flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full flex pointer-events-none"
+              className="flex-col gap-1 mt-20 p-2 z-50 absolute top-0 left-0 bg-white backdrop-blur-sm bg-opacity-50 h-screen w-full flex"
               initial="hidden"
               animate="visible"
               exit="hidden"
