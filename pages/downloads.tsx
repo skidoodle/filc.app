@@ -22,7 +22,7 @@ export default function Downloads({ releases }: DownloadsProps) {
         style={{ background: "linear-gradient(#FFFFFF00, #0DE3B533)" }}
         className="h-full pb-6"
       >
-        <div className="flex justify-center w-full px-4 lg:px-0 lg:w-4/5 m-auto mt-12 lg:mt-24 gap-16">
+        <div className="flex justify-center w-full px-4 lg:px-0 lg:w-4/5 m-auto gap-16">
           <m.div
             className="flex flex-col gap-8"
             initial="hidden"
@@ -36,36 +36,42 @@ export default function Downloads({ releases }: DownloadsProps) {
               },
             }}
           >
-            <h1
-              className="text-4xl lg:text-7xl font-extrabold"
-              style={{ lineHeight: 1 }}
-            >
-              Szerezd meg a Filcet
-            </h1>
-            <div className="flex gap-2">
-              <div
-                className="noselect flex items-center px-6 py-2 rounded-2xl text-xl font-semibold text-white cursor-pointer shadow-md"
-                style={{ background: "#278076", fontSize: 18, fontWeight: 600 }}
-                onClick={() =>
-                  window.open("https://testflight.apple.com/join/AIEKpVYq")
-                }
+            <div className="flex flex-col h-auto lg:h-screen items-start justify-center gap-4 lg:gap-8 mt-4 lg:-mt-20">
+              <h1
+                className="text-5xl lg:text-7xl font-extrabold"
+                style={{ lineHeight: 1 }}
               >
-                <div style={{ height: 20, marginRight: 12 }}>
-                  <AppleIcon />
+                Szerezd meg a Filcet
+              </h1>
+              <div className="flex gap-2">
+                <div
+                  className="noselect flex items-center px-6 py-2 rounded-2xl text-2xl font-bold text-white cursor-pointer shadow-md"
+                  style={{
+                    background: "#278076",
+                  }}
+                  onClick={() =>
+                    window.open("https://testflight.apple.com/join/AIEKpVYq")
+                  }
+                >
+                  <div style={{ height: 24, marginRight: 12 }}>
+                    <AppleIcon />
+                  </div>
+                  <span>iOS</span>
                 </div>
-                iOS
-              </div>
-              <div
-                className="noselect flex items-center px-6 py-2 rounded-2xl text-xl font-semibold text-white cursor-pointer shadow-md"
-                style={{ background: "#278076", fontSize: 18, fontWeight: 600 }}
-                onClick={() =>
-                  window.open(releases[0].assets[0].browser_download_url)
-                }
-              >
-                <div style={{ height: 20, marginRight: 12 }}>
-                  <DownloadIcon />
+                <div
+                  className="noselect flex items-center px-6 py-2 rounded-2xl text-2xl font-bold text-white cursor-pointer shadow-md"
+                  style={{
+                    background: "#278076",
+                  }}
+                  onClick={() =>
+                    window.open(releases[0].assets[0].browser_download_url)
+                  }
+                >
+                  <div style={{ height: 24, marginRight: 12 }}>
+                    <DownloadIcon />
+                  </div>
+                  <span>APK</span>
                 </div>
-                APK
               </div>
             </div>
             <div className="block lg:hidden">
@@ -83,7 +89,7 @@ export default function Downloads({ releases }: DownloadsProps) {
             </div>
           </m.div>
           <m.div
-            className="hidden lg:block"
+            className="hidden h-screen lg:flex flex-col justify-center items-start -mt-20"
             style={{ width: "50%" }}
             initial="hidden"
             animate="visible"

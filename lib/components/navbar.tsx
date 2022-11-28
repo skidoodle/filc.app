@@ -118,7 +118,7 @@ export default function FilcNavBar() {
             {isOpen ? <CloseIcon /> : <MenuIcon />}
           </div>
         </div>
-        <div className="lg:flex items-center gap-4 hidden">
+        <div className="lg:flex items-center gap-2 hidden">
           {connectionItems.map((item) => {
             return (
               <Link
