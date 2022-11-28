@@ -19,7 +19,9 @@ export default function Downloads({ releases }: DownloadsProps) {
       </Head>
       <FilcNavBar />
       <div
-        style={{ background: "linear-gradient(#FFFFFF00, #0DE3B533)" }}
+        style={{
+          background: "linear-gradient(#FFFFFF00, #0DE3B533 100vh, #0DE3B533)",
+        }}
         className="h-full pb-6"
       >
         <div className="flex justify-center w-full px-4 lg:px-0 lg:w-4/5 m-auto gap-16">
