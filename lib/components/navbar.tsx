@@ -67,14 +67,7 @@ export default function FilcNavBar() {
 
   return (
     <>
-      <div
-        className="flex items-center justify-between backdrop-blur-lg p-4 sticky top-0 left-0 z-50 h-20"
-        style={
-          {
-            // background: "#E8FFFBAA",
-          }
-        }
-      >
+      <div className="flex items-center justify-between backdrop-blur-xl p-4 sticky top-0 left-0 z-50 h-20">
         <div className="noselect flex items-center">
           <div style={{ width: 200 }} className="lg:w-auto">
             <Image
