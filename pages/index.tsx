@@ -4,6 +4,7 @@ import styles from "styles/Home.module.scss";
 import { motion as m } from "framer-motion";
 import ShowcaseSlide from "lib/components/showcase/showcase";
 import Backpack from "lib/components/showcase/backpack";
+import Footer from "lib/components/footer";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         style={{
           background: "linear-gradient(#FFFFFF00, #0DE3B533 100vh, #0DE3B533)",
         }}
-        className="h-full pb-6"
+        className="h-full"
       >
         <div
           className="flex flex-col gap-12 items-center justify-center min-h-full"
@@ -112,6 +113,7 @@ export default function Home() {
             customAsset={<Backpack />}
             arrangement="right"
           />
+          <Footer />
         </div>
       </div>
     </>
