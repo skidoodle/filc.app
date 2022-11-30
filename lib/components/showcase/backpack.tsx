@@ -12,13 +12,12 @@ export default function Backpack() {
   });
 
   useEffect(() => {
-    console.log(inView);
     if (inView) {
       rive?.play();
     } else {
       rive?.reset();
     }
-  }, [inView]);
+  }, [inView, rive]);
 
   return (
     <div ref={ref} className="h-80 w-80">

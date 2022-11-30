@@ -4,9 +4,13 @@ import GithubIcon from "./icons/github.svg";
 import Image from "next/image";
 
 const connections: any[][] = [
-  ["https://instagram.com/filcnaplo", "Instagram", <InstagramIcon />],
-  ["https://github.com/filc/naplo", "Github", <GithubIcon />],
-  ["https://filcnaplo.hu/discord", "Discord", <DiscordIcon />],
+  [
+    "https://instagram.com/filcnaplo",
+    "Instagram",
+    <InstagramIcon key="instagram" />,
+  ],
+  ["https://github.com/filc/naplo", "Github", <GithubIcon key="github" />],
+  ["https://filcnaplo.hu/discord", "Discord", <DiscordIcon key="discord" />],
 ];
 
 export default function Footer() {
@@ -50,7 +54,7 @@ export default function Footer() {
                   key={e[0]}
                   onClick={() => window.open(e[0], "_blank")}
                 >
-                  {e[2]}
+                  <span>{e[2]}</span>
                 </div>
               );
             })}
