@@ -1,11 +1,37 @@
 import Footer from "lib/components/footer";
 import FilcNavBar from "lib/components/navbar";
 import GoalCard from "lib/components/premium/goal_card";
-import PlanCard from "lib/components/premium/plan_card";
+import PlanCard, { PremiumPerk } from "lib/components/premium/plan_card";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import KupakIcon from "../lib/components/icons/kupak.svg";
 import TintaIcon from "../lib/components/icons/tinta.svg";
+
+const kupakPerksPrimary: PremiumPerk[] = [
+  { icon: "👤", name: "Profil személyre szabás", highlighted: true },
+  { icon: "🖌️", name: "Téma+", highlighted: true },
+  { icon: "📈", name: "Részletes jegy statisztika", highlighted: true },
+  { icon: "🔣", name: "Válassz ikon témát", highlighted: true },
+];
+const kupakPerksSecondary: PremiumPerk[] = [
+  {
+    icon: "✨",
+    name: "Prémium rang és csevegő a discord szerverünkön",
+    highlighted: false,
+  },
+  { icon: "📬", name: "Elsőbbségi segítségnyújtás", highlighted: false },
+];
+const tintaPerksPrimary: PremiumPerk[] = [
+  ...kupakPerksPrimary,
+  { icon: "🗓️", name: "Heti órarend nézet", highlighted: true },
+  { icon: "📲", name: "Órarend Widget", highlighted: true },
+  { icon: "🚩", name: "Cél követés", highlighted: true },
+  { icon: "🖥️", name: "Asztali alkalmazás", highlighted: true },
+];
+const tintaPerksSecondary: PremiumPerk[] = [
+  ...kupakPerksSecondary,
+  { icon: "🕐", name: "Korai hozzáférés új verziókhoz", highlighted: false },
+];
 
 export default function Downloads({ sponsors }: any) {
   return (
@@ -66,6 +92,7 @@ export default function Downloads({ sponsors }: any) {
               sponsorUrl={
                 "https://github.com/sponsors/filc/sponsorships?tier_id=238453&preview=false"
               }
+              perks={[...kupakPerksPrimary, ...kupakPerksSecondary]}
             />
             <PlanCard
               icon={<TintaIcon />}
@@ -90,6 +117,7 @@ export default function Downloads({ sponsors }: any) {
               sponsorUrl={
                 "https://github.com/sponsors/filc/sponsorships?tier_id=238454&preview=false"
               }
+              perks={[...tintaPerksPrimary, ...tintaPerksSecondary]}
             />
           </div>
           <Footer />
