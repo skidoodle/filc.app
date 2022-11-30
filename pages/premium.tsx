@@ -62,6 +62,10 @@ export default function Downloads({ sponsors }: any) {
               description={
                 "Szabd személyre a filcet és láss részletesebb statisztikákat."
               }
+              gradient={"linear-gradient(90deg, #F0BD0C 0%, #0CD070 100%)"}
+              sponsorUrl={
+                "https://github.com/sponsors/filc/sponsorships?tier_id=238453&preview=false"
+              }
             />
             <PlanCard
               icon={<TintaIcon />}
@@ -81,6 +85,10 @@ export default function Downloads({ sponsors }: any) {
               }
               description={
                 "Kényelmesebb órarend, asztali alkalmazás és célok kitűzése."
+              }
+              gradient={"linear-gradient(90deg, #B816E0 0%, #17D1BB 100%)"}
+              sponsorUrl={
+                "https://github.com/sponsors/filc/sponsorships?tier_id=238454&preview=false"
               }
             />
           </div>

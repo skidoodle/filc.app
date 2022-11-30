@@ -68,7 +68,10 @@ export default function Downloads({ releases }: DownloadsProps) {
                       background: "#278076",
                     }}
                     onClick={() =>
-                      window.open(releases[0].assets[0].browser_download_url)
+                      window.open(
+                        releases[0].assets[0].browser_download_url,
+                        "_blank"
+                      )
                     }
                   >
                     <div style={{ height: 24, marginRight: 12 }}>
