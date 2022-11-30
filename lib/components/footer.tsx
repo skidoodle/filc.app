@@ -47,6 +47,8 @@ export default function Footer() {
                   style={{
                     background: "#C5F5EC",
                   }}
+                  key={e[0]}
+                  onClick={() => window.open(e[0], "_blank")}
                 >
                   {e[2]}
                 </div>

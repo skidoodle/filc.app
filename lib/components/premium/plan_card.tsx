@@ -45,7 +45,7 @@ export default function PlanCard({
         <div className="flex flex-col my-2 gap-1">
           {perks.map((perk: PremiumPerk) => {
             return (
-              <div className="flex gap-4">
+              <div className="flex gap-4" key={perk.name}>
                 <span>{perk.icon}</span>
                 <span
                   className={`${

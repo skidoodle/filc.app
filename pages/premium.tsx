@@ -120,6 +120,18 @@ export default function Downloads({ sponsors }: any) {
               perks={[...tintaPerksPrimary, ...tintaPerksSecondary]}
             />
           </div>
+          {/* <h1 className="text-2xl font-bold my-12">
+            Támogass minket, és szerezz jutalmakat!
+          </h1>
+          <div className="grid grid-cols-2 auto-rows-fr grid-flow-dense">
+            <img src="/img/premium/kupak_1.svg" />
+            <img src="/img/premium/kupak_2.svg" />
+            <img src="/img/premium/kupak_3.svg" />
+            <img src="/img/premium/tinta_1.svg" />
+            <img src="/img/premium/tinta_2.svg" />
+            <img src="/img/premium/tinta_3.svg" />
+            <img src="/img/premium/tinta_4.svg" />
+          </div> */}
           <Footer />
         </div>
       </div>
