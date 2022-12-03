@@ -54,7 +54,7 @@ export default function Footer() {
                   key={e[0]}
                   onClick={() => window.open(e[0], "_blank")}
                 >
-                  <span>{e[2]}</span>
+                  <div className="h-full">{e[2]}</div>
                 </div>
               );
             })}
