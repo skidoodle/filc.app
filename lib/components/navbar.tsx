@@ -69,15 +69,17 @@ export default function FilcNavBar() {
     <>
       <div className="flex items-center justify-between backdrop-blur-xl p-4 sticky top-0 left-0 z-50 h-20">
         <div className="noselect flex items-center">
-          <div style={{ width: 200 }} className="lg:w-auto">
-            <Image
-              src="/img/logo.svg"
-              alt="logo"
-              height={48}
-              width={48}
-              style={{ borderRadius: 16 }}
-            />
-          </div>
+          <Link href="/">
+            <div style={{ width: 200 }} className="lg:w-auto">
+              <Image
+                src="/img/logo.svg"
+                alt="logo"
+                height={48}
+                width={48}
+                style={{ borderRadius: 16 }}
+              />
+            </div>
+          </Link>
         </div>
         <div
           className="sm:flex items-center gap-12 hidden"
