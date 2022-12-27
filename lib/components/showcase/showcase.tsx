@@ -17,11 +17,11 @@ export default function ShowcaseSlide({
     <div
       className={`flex flex-col ${
         arrangement == "right" ? "md:flex-row-reverse" : ""
-      } md:flex-row justify-center items-center h-screen md:max-w-4xl m-auto py-24 gap-12 px-4`}
+      } md:flex-row justify-center items-center md:h-screen md:max-w-4xl m-auto py-24 gap-12 px-4`}
     >
       {(asset && (
         <img
-          className="h-full md:max-w-sm"
+          className="md:h-full md:max-w-sm"
           src={`/img/showcase/assets/${asset}.svg`}
         />
       )) ??
