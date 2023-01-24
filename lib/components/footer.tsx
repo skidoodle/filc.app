@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="text-gray-300 text-center sm:text-left">
-            Website design made by Xou, Copyright 2022 Filc Napló
+            Website design made by Xou, Copyright { new Date().getFullYear() } Filc Napló
           </span>
           <div className="flex">
             {connections.map((e: any[]) => {
