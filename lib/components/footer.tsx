@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const connections: any[][] = [
   [
-    "https://instagram.com/filc_naplo",
+    "https://instagram.com/filc_club",
     "Instagram",
     <InstagramIcon key="instagram" />,
   ],
