@@ -7,6 +7,7 @@ import GithubIcon from "./icons/github.svg";
 import DiscordIcon from "./icons/discord.svg";
 import MenuIcon from "./icons/menu.svg";
 import CloseIcon from "./icons/close.svg";
+import PrivacyIcon from "./icons/privacy.svg";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useState } from "react";
@@ -42,6 +43,13 @@ const navbarItems: NavbarItem[] = [
     title: "Premium",
     defaultShow: true,
   },
+  {
+    color: "#01342D",
+    icon: <PrivacyIcon />,
+    href: "/privacy",
+    title: "Privacy",
+    defaultShow: false,
+  }
 ];
 
 const connectionItems: NavbarItem[] = [
