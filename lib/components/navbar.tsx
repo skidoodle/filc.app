@@ -56,7 +56,7 @@ const connectionItems: NavbarItem[] = [
   {
     color: '#222222',
     icon: <GithubIcon />,
-    href: 'https://github.com/filc/naplo',
+    href: 'https://github.com/filc',
     title: 'GitHub',
     defaultShow: true
   },
