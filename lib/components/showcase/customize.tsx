@@ -1,27 +1,27 @@
-import { useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { useRive } from "rive-react";
+import { useInView } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import { useRive } from 'rive-react'
 
-export default function Customize() {
-  const ref = useRef(null);
-  const inView = useInView(ref);
+export default function Customize () {
+  const ref = useRef(null)
+  const inView = useInView(ref)
 
   const { rive, RiveComponent } = useRive({
-    src: "/animations/customizeanim.riv",
-    autoplay: false,
-  });
+    src: '/animations/customizeanim.riv',
+    autoplay: false
+  })
 
   useEffect(() => {
     if (inView) {
-      rive?.play();
+      rive?.play()
     } else {
-      rive?.reset();
+      rive?.reset()
     }
-  }, [inView, rive]);
+  }, [inView, rive])
 
   return (
-    <div ref={ref} className="h-96 w-96">
+    <div ref={ref} className='h-96 w-96'>
       <RiveComponent />
     </div>
-  );
+  )
 }

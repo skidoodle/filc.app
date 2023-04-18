@@ -4,6 +4,10 @@ const nextConfig = {
     unoptimized: true,
   },
   assetPrefix: "./",
+  i18n: {
+    locales: ['hu'],
+    defaultLocale: 'hu',
+  },
 };
 
 module.exports = nextConfig;
